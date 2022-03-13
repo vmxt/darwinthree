@@ -1,12 +1,11 @@
 <template>
   <div class="mainContainer">
-    <div ref="container" id="container"></div>
-
-    <div>
-      <video id="video" class="hideVideo" type="video/mp4" autoplay>
-        <source src="../static/darwin.mp4" type="video/mp4" />
-      </video>
+    <div ref="container" id="container">
     </div>
+
+      <video id="video" class="hideVideo" type="video/mp4">
+        <source src="../static/darwin.mp4" type="video/mp4" autoplay />
+      </video>
 
     <div class="controls">
       <button type="button" name="translate" @click="controlSelect">
@@ -20,7 +19,6 @@
 
 <script>
 import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { TransformControls } from "three/examples/jsm/controls/TransformControls.js";
 
